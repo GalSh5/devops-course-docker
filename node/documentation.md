@@ -1,0 +1,2 @@
+- build the image
+- run the image with `docker run --detach --network host --name <container_name> <image_tag>:<version>`

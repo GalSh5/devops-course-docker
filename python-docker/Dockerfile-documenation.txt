@@ -1,0 +1,4 @@
+FROM python:3-slim  # Pull a slim version of python3
+COPY . /home/  # Copy the content of the directory to some directory on the container (we can just copy the scropt instead)
+WORKDIR /home/  # Set it as the working directory (like "cd")
+CMD ["python3", "script.py"]  # Run the script with python3

@@ -1,0 +1,5 @@
+FROM openjdk:11  # Pull some version of openjdk
+COPY . /usr/src/myapp  # Copy the contents of this directory to csome directory on the container
+WORKDIR /usr/src/myapp  # Set it as the working directory (like "cd")
+RUN javac HelloWorld.java  # Compile the java code
+CMD ["java", "HelloWorld"]  # Run the code with java

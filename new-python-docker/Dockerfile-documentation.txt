@@ -1,0 +1,4 @@
+FROM python:3-slim  # Pull a slim version of python3
+COPY . /home/  # Copy the file.txt file and the python script to some directory on the container
+WORKDIR /home/  # Set it as the working directory
+CMD ["python3", "write_to_file.py"]  # Run the script with python3

@@ -1,0 +1,2 @@
+- I found everything on the intenet, I do not know nodeJS at all
+- Do not waste to much time on it if you succeed in the other exercises
