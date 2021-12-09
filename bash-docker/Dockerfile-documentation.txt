@@ -1,0 +1,3 @@
+FROM bash:4.4  # Pull a version of bash image that I've found on the internet
+COPY script.sh /  # Copy the bash script to the root directory of the container
+CMD ["bash", "/script.sh"]  # Run the script with bash

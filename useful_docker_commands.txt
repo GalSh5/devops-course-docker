@@ -1,0 +1,12 @@
+Building a docker image:
+  - cd <directory>
+  - vim Dockerfile
+  - docker build --tag <name>:<version>
+
+Killing all docker processes:
+  - docker ps --all | awk '$1!~"CONTAINER"{print $1}' | xargs docker rm -f
+  - Check with "docker ps -all"
+
+Killing all local docker images / repositories:
+  - docker image ls | awk '$1!~"REPOSITORY"{print $3}' | xargs docker image rm -f
+  - Check with "docker image ls"

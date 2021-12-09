@@ -1,0 +1,6 @@
+FROM node:12-slim  # Source image is a slim version of node 12
+WORKDIR /usr/src/app  # Set working directory
+COPY package*.json ./  # Copy package file to destination
+RUN npm install --only-production  # Installs resuired NPM packages
+COPY . ./  # Copy the rest of the files to the destination (can also be "COPY index.js ./")
+CMD ["npm", "start"]  # Run the script
